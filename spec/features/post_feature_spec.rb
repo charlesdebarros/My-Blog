@@ -37,6 +37,17 @@ describe Post do
         expect(page).not_to have_content('Test Post')
         expect(page).to have_content('Unable to add post')
       end
+
+      it 'displays errors if bad data is giving' do
+        visit '/posts'
+        click_link 'Add a post'
+        fill_in 'Title', with: ''
+        fill_in 'Content', with: ''
+        click_button 'Create Post'
+
+        expect(current_path).to eq('/posts')
+        expect(page).to have_content('errors')
+      end
     end
   end
 end
