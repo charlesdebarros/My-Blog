@@ -11,7 +11,7 @@ describe Post do
   end
 
   describe 'Adding a post:' do
-    context 'it is a valid post' do
+    context 'It is a valid post' do
       it 'successfully adds a post' do
         visit '/posts'
         click_link 'Add a post'
@@ -22,6 +22,20 @@ describe Post do
         expect(current_path).to eq('/posts')
         expect(page).to have_content('This is a sample post.')
         expect(page).to have_content('Post successfully created')
+      end
+    end
+
+    context 'It is not a valid post' do
+      it 'fails to add a post' do
+        visit '/posts'
+        click_link 'Add a post'
+        fill_in 'Title', with: ''
+        fill_in 'Content', with: ''
+        click_button 'Create Post'
+
+        expect(current_path).to eq('/posts')
+        expect(page).not_to have_content('Test Post')
+        expect(page).to have_content('Unable to add post')
       end
     end
   end

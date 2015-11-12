@@ -1,4 +1,13 @@
 <%= form_for @post do |f| %>
+  <% if @post.errors.any? %>
+    <h3><%= pluralize(@post.errors.count, "error") %> prevented this post from being saved: </h3>
+    <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
   <%= f.label :title %> <br>
   <%= f.text_field :title, placeholder: 'Title' %>
   <br><br>
@@ -7,3 +16,5 @@
   <br><br>
   <%= f.submit %>
 <% end %>
+<br>
+<%= link_to 'Cancel', root_path %>

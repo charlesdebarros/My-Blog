@@ -14,6 +14,7 @@ class PostsController < ApplicationController
       flash[:notice] = 'Post successfully created'
       redirect_to '/posts'
     else
+      flash[:alert] = 'Unable to add post'
       render 'new'
     end
   end
