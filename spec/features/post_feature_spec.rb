@@ -25,6 +25,20 @@ describe Post do
       end
     end
 
+    context 'Displaying a post' do      
+      before do
+        Post.create(title: 'Test post', content: 'This is a sample post.' )
+      end
+
+      it 'displays a post' do
+        visit '/posts'
+        click_link 'Show'
+
+        expect(page).to have_content('Test post')
+        expect(page).to have_content('This is a sample post.')
+      end
+    end
+
     context 'It is not a valid post' do
       it 'fails to add a post' do
         visit '/posts'
