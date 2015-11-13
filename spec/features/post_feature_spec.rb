@@ -64,40 +64,64 @@ describe Post do
     end
   end
 
-  describe 'Editing a post:' do
+  context 'Working with posts' do
+
     before do
       Post.create(title: 'Test post', content: 'This is a sample post.')
     end
 
-    it 'updates the post details' do
-      visit '/posts'
-      click_link 'Edit'
-      fill_in 'Title', with: 'Old test post'
-      fill_in 'Content', with: 'This is an old sample post.'
-      click_button 'Update Post'
+    describe 'Editing a post:' do
+      it 'updates the post details' do
+        visit '/posts'
+        click_link 'Edit'
+        fill_in 'Title', with: 'Old test post'
+        fill_in 'Content', with: 'This is an old sample post.'
+        click_button 'Update Post'
 
-      expect(page).to have_content('Old test post')
-      expect(page).to have_content('This is an old sample post.')
+        expect(page).to have_content('Old test post')
+        expect(page).to have_content('This is an old sample post.')
+      end
+
+      it 'updates the post with invalid data' do
+        visit '/posts'
+        click_link 'Edit'
+        fill_in 'Title', with: ''
+        fill_in 'Content', with: 'This is an old sample post.'
+        click_button 'Update Post'
+
+        expect(page).not_to have_content('Old test post')
+      end
+
+      it 'displays error messages when data is invalid' do
+        visit '/posts'
+        click_link 'Edit'
+        fill_in 'Title', with: ''
+        fill_in 'Content', with: ''
+        click_button 'Update Post'
+
+        expect(page).to have_content('errors')
+      end
     end
 
-    it 'updates the post with invalid data' do
-      visit '/posts'
-      click_link 'Edit'
-      fill_in 'Title', with: ''
-      fill_in 'Content', with: 'This is an old sample post.'
-      click_button 'Update Post'
+    describe 'Deleting a post' do
+      it 'destroys the post record permanently' do
+        visit '/posts'
+        click_link 'Delete'
 
-      expect(page).not_to have_content('Old test post')
-    end
-
-    it 'displays error messages when data is invalid' do
-      visit '/posts'
-      click_link 'Edit'
-      fill_in 'Title', with: ''
-      fill_in 'Content', with: ''
-      click_button 'Update Post'
-
-      expect(page).to have_content('errors')
+        expect(page).not_to have_content('Test post')
+        expect(page).not_to have_content('This is a sample post.')
+      end
     end
   end
 end
+
+
+
+
+
+
+
+
+
+
+
