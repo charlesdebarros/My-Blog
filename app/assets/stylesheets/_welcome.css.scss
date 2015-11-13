@@ -1,0 +1,49 @@
+.col-1, .col-2, .col-3 {
+  float: left;
+}
+
+.col-1 {
+  width: 45%;
+  padding: 0 5% 0 2.5%;
+}
+
+.col-2, .col-3 {
+  width: 27.5%;
+  padding: 0 2.5%;
+}
+
+.homepage-content {
+  h2 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: $dark-grey;
+    &:hover {
+      color: $light-blue;
+    }
+  }
+  .date {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    color: $lighter-grey;
+  }
+  p {
+    margin: 0 0 0.75rem 0;
+  }
+}
+
+.about {
+  padding: 0 0.75% 0 0;
+  a {
+    color: $light-blue;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
