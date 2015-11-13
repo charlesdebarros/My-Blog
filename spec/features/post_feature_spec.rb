@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 describe Post do
-  
   context 'No posts available' do
     it 'displays no posts' do
       visit '/posts'
@@ -22,20 +21,6 @@ describe Post do
         expect(current_path).to eq('/posts')
         expect(page).to have_content('This is a sample post.')
         expect(page).to have_content('Post successfully created')
-      end
-    end
-
-    context 'Displaying a post' do      
-      before do
-        Post.create(title: 'Test post', content: 'This is a sample post.' )
-      end
-
-      it 'displays a post' do
-        visit '/posts'
-        click_link 'Show'
-
-        expect(page).to have_content('Test post')
-        expect(page).to have_content('This is a sample post.')
       end
     end
 
@@ -62,6 +47,57 @@ describe Post do
         expect(current_path).to eq('/posts')
         expect(page).to have_content('errors')
       end
+    end
+
+    context 'Displaying a post' do
+      before do
+        Post.create(title: 'Test post', content: 'This is a sample post.')
+      end
+
+      it 'displays a post' do
+        visit '/posts'
+        click_link 'Show'
+
+        expect(page).to have_content('Test post')
+        expect(page).to have_content('This is a sample post.')
+      end
+    end
+  end
+
+  describe 'Editing a post:' do
+    before do
+      Post.create(title: 'Test post', content: 'This is a sample post.')
+    end
+
+    it 'updates the post details' do
+      visit '/posts'
+      click_link 'Edit'
+      fill_in 'Title', with: 'Old test post'
+      fill_in 'Content', with: 'This is an old sample post.'
+      click_button 'Update Post'
+
+      expect(page).to have_content('Old test post')
+      expect(page).to have_content('This is an old sample post.')
+    end
+
+    it 'updates the post with invalid data' do
+      visit '/posts'
+      click_link 'Edit'
+      fill_in 'Title', with: ''
+      fill_in 'Content', with: 'This is an old sample post.'
+      click_button 'Update Post'
+
+      expect(page).not_to have_content('Old test post')
+    end
+
+    it 'displays error messages when data is invalid' do
+      visit '/posts'
+      click_link 'Edit'
+      fill_in 'Title', with: ''
+      fill_in 'Content', with: ''
+      click_button 'Update Post'
+
+      expect(page).to have_content('errors')
     end
   end
 end
