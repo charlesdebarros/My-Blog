@@ -1,18 +1,21 @@
 <h1 id="page-title">Things I've written</h1>
 
 <div id="posts-wrapper" class="skinny-wrapper">
-  <% if @posts.any? %>
-    <% @posts.each do |post| %>
-      <h3><a href="#"><%= link_to post.title, post %></a></h3>
-      <p><%= markdown post.content %></p>
-      <%= link_to 'Show', post_path(post) %> |
-      <%= link_to 'Edit', edit_post_path(post) %> |
-      <%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure?'} %>
-      <hr>
+  <div class="post">
+    <% if @posts.any? %>
+      <% @posts.each do |post| %>
+        <p class="date"><%= post.created_at.strftime('%A, %d %b %Y') %></p>
+        <h2><a href="#"><%= link_to post.title, post %></a></h2>
+        <br>     
+        <%= link_to 'Show', post_path(post) %> |
+        <%= link_to 'Edit', edit_post_path(post) %> |
+        <%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure?'} %>
+        <hr>
+      <% end %>
+    <% else %>
+      <h3>No posts added yet.</h3>
     <% end %>
-  <% else %>
-    <h3>No posts added yet.</h3>
-  <% end %>
+  </div>
 
   <%= link_to 'Add a post', new_post_path %>
 </div>
