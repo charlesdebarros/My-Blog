@@ -11,14 +11,11 @@
     <div class="col-2 homepage-content">
         <h2>Things I've written</h2>
         <hr>
-        <h3><a href="#">Rails - The basics (cont)</a></h3>
-        <p class="date">Friday, 26th September, 2015</p>
-        <h3><a href="#">Rails - The basics</a></h3>
-        <p class="date">Friday, 19th September, 2015</p>
-        <h3><a href="#">Ruby - Intro (cont)</a></h3>
-        <p class="date">Friday, 12th September, 2015</p>
-        <h3><a href="#">Ruby - Intro</a></h3>
-        <p class="date">Friday, 05th September, 2015</p>
+        <% @posts.each do |post| %>
+        <h3><a href="#"><%= link_to post.title, post %></a></h3>
+        <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+        <hr>
+        <% end %>
     </div>
     <div class="col-3 homepage-content">
         <h2>Things I've built</h2>
