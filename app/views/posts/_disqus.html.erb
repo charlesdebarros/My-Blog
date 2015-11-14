@@ -1,5 +1,10 @@
 <div id="disqus_thread"></div>
 <script>
+    /*** CONFIGURATION VARIABLES ***/
+    var disqus_shortname = 'mysite';
+    var disqus_identifier = '<%= @post.id %>';
+    var disqus_title = '<%= @post.title %>';
+    var disqus_url = '<%= url_for([@post, { only_path: false }]) %>';
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
