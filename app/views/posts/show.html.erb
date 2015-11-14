@@ -1,13 +1,10 @@
-
-
-
-
 <div id="post-show-content" class="skinny-wrapper wrapper-padding">
   <header>
     <p class="date"><%= @post.created_at.strftime('%A, %d %b %Y') %></p>
     <h1><%= @post.title %></h1>
     <hr>
   </header>
+
   <div id="content">
     <%= @post.content%><br><br>
     <%= link_to 'Edit', edit_post_path(@post) %> |
@@ -15,13 +12,13 @@
     <br><br>
     <%= link_to 'Back', root_path %>
     <hr>
-    <div id="share-box">
-      <p>Share "Rails - the basics (cont)"</p>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-google-plus"></i></a>
-    </div>
-    <hr>
   </div>
+
+  <div id="share-box">
+    <p>Share "<%= @post.title %>"</p>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+  </div>
+  <hr>
 </div>
