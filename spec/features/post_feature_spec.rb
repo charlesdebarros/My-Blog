@@ -19,7 +19,7 @@ describe Post do
         click_button 'Create Post'
 
         expect(current_path).to eq('/posts')
-        expect(page).to have_content('This is a sample post.')
+        expect(page).to have_content('Test post')
         expect(page).to have_content('Post successfully created')
       end
     end
@@ -56,7 +56,7 @@ describe Post do
 
       it 'displays a post' do
         visit '/posts'
-        click_link 'Show'
+        click_link 'Test post'
 
         expect(page).to have_content('Test post')
         expect(page).to have_content('This is a sample post.')
@@ -72,7 +72,7 @@ describe Post do
 
     describe 'Editing a post:' do
       it 'updates the post details' do
-        visit '/posts'
+        visit '/posts/test-post'
         click_link 'Edit'
         fill_in 'Title', with: 'Old test post'
         fill_in 'Content', with: 'This is an old sample post.'
@@ -83,7 +83,7 @@ describe Post do
       end
 
       it 'updates the post with invalid data' do
-        visit '/posts'
+        visit '/posts/test-post'
         click_link 'Edit'
         fill_in 'Title', with: ''
         fill_in 'Content', with: 'This is an old sample post.'
@@ -93,7 +93,7 @@ describe Post do
       end
 
       it 'displays error messages when data is invalid' do
-        visit '/posts'
+        visit '/posts/test-post'
         click_link 'Edit'
         fill_in 'Title', with: ''
         fill_in 'Content', with: ''
@@ -105,7 +105,7 @@ describe Post do
 
     describe 'Deleting a post' do
       it 'destroys the post record permanently' do
-        visit '/posts'
+        visit '/posts/test-post'
         click_link 'Delete'
 
         expect(page).not_to have_content('Test post')
