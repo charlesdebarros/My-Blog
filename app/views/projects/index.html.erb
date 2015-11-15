@@ -1,0 +1,18 @@
+<h1 id="page-title">Things I've built</h1>
+
+<div id="posts-wrapper" class="skinny-wrapper">
+  <div class="post">
+    <% if @projects.any? %>
+      <% @projects.each do |project| %>
+        <p class="date"><%= project.created_at.strftime('%A, %d %b %Y') %></p>
+        <h2><a href="#"><%= link_to project.title, project %></a></h2>
+        <br>
+        <hr>
+      <% end %>
+    <% else %>
+      <h3>No projects added yet.</h3>
+    <% end %>
+    <%= link_to 'Add a project', new_project_path %>
+  </div>
+  <br>
+</div>
