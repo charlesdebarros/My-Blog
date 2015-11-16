@@ -20,13 +20,10 @@
     <div class="col-3 homepage-content">
         <h2>Things I've built</h2>
         <hr>
-        <h3><a href="#">Slate - Makers final project</a></h3>
-        <p class="date">Friday, 26th September, 2015</p>
-        <h3><a href="#">Boris Bikes</a></h3>
-        <p class="date">Friday, 19th September, 2015</p>
-        <h3><a href="#">Sudoku Online</a></h3>
-        <p class="date">Friday, 12th September, 2015</p>
-        <h3><a href="#"> Todo list in Rails</a></h3>
-        <p class="date">Friday, 05th September, 2015</p>
+        <% @projects.each do |project| %>
+            <h3><a href="#"><%= link_to project.title, project %></a></h3>
+            <p class="date"><%= project.created_at.strftime('%A, %d %b %Y') %></p>
+            <hr>
+        <% end %>
     </div>
 </div>

@@ -6,8 +6,10 @@
   </header>
 
   <div id="content">
-    <%= markdown @project.description %><br><br>
-    <a href="<%= @project.link %>" class: "project-button" target="_blank">Visit <%= @project.title %></a>
+    <%= markdown @project.description %><br>
+    <div class="button-wrapper">
+      <a href="<%= @project.link %>" class="project-button" target="_blank">Visit <%= @project.title %></a>
+    </div>
     <br><br>
     <%= link_to 'Edit', edit_project_path(@project) %> |
     <%= link_to 'Delete', project_path(@project), method: :delete, data: { confirm: 'Are you sure?'} %>

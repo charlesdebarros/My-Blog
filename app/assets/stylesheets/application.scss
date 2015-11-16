@@ -142,6 +142,19 @@ input[type="submit"], .button {
   }
 }
 
+.button-wrapper {
+  margin: 3em 0 0 0;
+  text-align: center;
+ .project-button {
+    text-decoration: none;
+    background: $light-blue;
+    color: $white;
+    padding: 1em 2em;
+  } 
+}
+
+
+
 @import 'welcome';
 @import 'posts_and_projects';
 @import 'pygments';
