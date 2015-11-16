@@ -48,17 +48,31 @@ describe Project do
         expect(page).to have_content('errors')
       end
     end
+  end
+  describe 'Working with projects' do
+    before do
+      Project.create(title: 'Test project', link: 'http://www.testpost.com', description: 'This is a sample project.')
+    end
     context 'Displaying a project' do
-      before do
-        Project.create(title: 'Test project', link: 'http://www.testpost.com', description: 'This is a sample project.')
-      end
-
       it 'displays a project' do
         visit '/projects'
         click_link 'Test project'
 
         expect(page).to have_content('Test project')
         expect(page).to have_content('This is a sample project.')
+      end
+    end
+    context 'Editing a project' do
+      it 'updates the project\'s details' do
+        visit '/projects/test-project'
+        click_link 'Edit'
+        fill_in 'Title', with: 'Old test project'
+        fill_in 'Link', with: 'http://www.oldtestproject.com'
+        fill_in 'Description', with: 'This is an old sample project.'
+        click_button 'Update Project'
+
+        expect(page).to have_content('Old test project')
+        expect(page).to have_content('This is an old sample project.')
       end
     end
   end

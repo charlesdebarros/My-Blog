@@ -24,6 +24,19 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    if @project.update project_params
+      flash[:notice] = 'The project has been successfully updated.'
+      redirect_to @project
+    else
+      flash[:alert] = 'Unable to update project.'
+      render 'edit'
+    end
+  end
+
   private
 
   def find_project
