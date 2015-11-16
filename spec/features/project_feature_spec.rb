@@ -101,6 +101,16 @@ describe Project do
         expect(page).to have_content('Description can\'t be blank')
       end
     end
+    context 'Deleting a post' do
+      it 'destroys the project record permanently' do
+        visit '/projects/test-project'
+        click_link 'Delete'
+
+        expect(page).not_to have_content('Test project')
+        expect(page).not_to have_content('This is a sample project.')
+        expect(page).to have_content('Project successfully deleted!')
+      end
+    end
   end
 end
 
