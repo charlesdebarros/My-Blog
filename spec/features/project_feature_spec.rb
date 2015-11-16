@@ -74,6 +74,32 @@ describe Project do
         expect(page).to have_content('Old test project')
         expect(page).to have_content('This is an old sample project.')
       end
+
+      it 'updates the project with invalid data' do
+        visit '/projects/test-project'
+        click_link 'Edit'
+        fill_in 'Title', with: ''
+        fill_in 'Link', with: ''
+        fill_in 'Description', with: ''
+        click_button 'Update Project'
+
+        expect(page).not_to have_content('Old test post')
+        expect(page).to have_content('errors')
+      end
+
+      it 'displays error messages when data is invalid' do
+        visit '/projects/test-project'
+        click_link 'Edit'
+        fill_in 'Title', with: ''
+        fill_in 'Link', with: ''
+        fill_in 'Description', with: ''
+        click_button 'Update Project'
+
+        expect(page).to have_content('errors')
+        expect(page).to have_content('Title can\'t be blank')
+        expect(page).to have_content('Link can\'t be blank')
+        expect(page).to have_content('Description can\'t be blank')
+      end
     end
   end
 end
