@@ -6,6 +6,9 @@ class ProjectsController < ApplicationController
     @projects = Project.all.order('created_at DESC')
   end
 
+  def show
+  end
+
   def new
     @project = Project.new
   end
@@ -24,7 +27,7 @@ class ProjectsController < ApplicationController
   private
 
   def find_project
-    @project = Project.friendly.find(params[:id])
+    @project = Project.find(params[:id])
   end
 
   def project_params

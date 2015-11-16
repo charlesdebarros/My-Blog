@@ -1,0 +1,18 @@
+<div id="post-show-content" class="skinny-wrapper wrapper-padding">
+  <header>
+    <p class="date"><%= @project.created_at.strftime('%A, %d %b %Y') %></p>
+    <h1><%= @project.title %></h1>
+    <hr>
+  </header>
+
+  <div id="content">
+    <%= markdown @project.description %><br><br>
+    <a href="<%= @project.link %>" class: "project-button" target="_blank">Visit <%= @project.title %></a>
+    <br><br>
+    <%= link_to 'Edit', edit_project_path(@project) %> |
+    <%= link_to 'Delete', project_path(@project), method: :delete, data: { confirm: 'Are you sure?'} %>
+    <br><br>
+    <%= link_to 'Back', root_path %>
+    <hr>
+  </div>
+</div>

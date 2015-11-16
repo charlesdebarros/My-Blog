@@ -1,6 +1,5 @@
 # Post Controller
 class PostsController < ApplicationController
-
   before_action :find_post, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -8,7 +7,6 @@ class PostsController < ApplicationController
   end
 
   def show
-   
   end
 
   def new
