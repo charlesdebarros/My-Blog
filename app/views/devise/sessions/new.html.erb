@@ -1,6 +1,5 @@
+<h1 id="page-title">Log in</h1>
 <div id="posts-wrapper" class="skinny-wrapper">
-  <h2>Log in</h2>
-
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
       <%= f.label :email %><br />
@@ -23,6 +22,6 @@
       <%= f.submit "Log in" %>
     </div>
   <% end %>
-
+  <br>
   <%= render "devise/shared/links" %>
 </div>
