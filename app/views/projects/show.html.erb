@@ -11,10 +11,14 @@
       <a href="<%= @project.link %>" class="project-button" target="_blank">Visit <%= @project.title %></a>
     </div>
     <br><br>
-    <%= link_to 'Edit', edit_project_path(@project) %> |
-    <%= link_to 'Delete', project_path(@project), method: :delete, data: { confirm: 'Are you sure?'} %>
+  </div>
+  <% if user_signed_in? %>
+    <div id="admin-links">
+      <%= link_to 'Edit', edit_project_path(@project) %> |
+      <%= link_to 'Delete', project_path(@project), method: :delete, data: { confirm: 'Are you sure?'} %>
+    </div>
     <br><br>
+  <% end %>
     <%= link_to 'Back', root_path %>
     <hr>
-  </div>
 </div>
