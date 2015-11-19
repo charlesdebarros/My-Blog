@@ -44,6 +44,22 @@
   }
 }
 
+#admin-links {
+  text-align: center;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  padding: 1rem 0;
+  margin: 3rem 0;
+  a {
+    text-decoration: none;
+    color: $light-blue;
+    margin: 0 1rem;
+    font-weight: 700;
+    font-size: .85rem;
+    text-transform: uppercase;
+  }
+}
+
 #share-box {
   text-align: center;
   p {
