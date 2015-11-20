@@ -28,6 +28,19 @@
       }
     }
   }
+  .button-wrapper {
+    p {
+      a {
+        .project-button {
+          color: $white;
+          font-size: 3rem;
+        }
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
 }
 
 .cv-header, .personal-statement, .tech-skills, .employment, .education-training, .interests-achievements {
