@@ -1,0 +1,1422 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 8, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 12, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 16, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 21, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+.skinny-wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* line 27, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+.wrapper-padding {
+  padding: 2rem 0;
+}
+
+/* line 31, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 37, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 42, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+.hidden {
+  display: none;
+}
+
+/* line 46, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #424652;
+}
+
+/* line 50, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+h1 {
+  font-size: 2.5rem;
+}
+
+/* line 51, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+h2 {
+  font-size: 2rem;
+}
+
+/* line 52, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+h3 {
+  font-size: 1.75rem;
+}
+
+/* line 53, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+h4 {
+  font-size: 1.375rem;
+}
+
+/* line 54, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+h5 {
+  font-size: 1.25rem;
+}
+
+/* line 55, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+h6 {
+  font-size: 1rem;
+}
+
+/* line 56, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+p, li {
+  font-size: 1.1em;
+  line-height: 1.75;
+}
+
+/* line 57, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+p, ul, ol {
+  margin: 0 0 1.6rem 0;
+}
+
+/* line 59, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+hr {
+  width: 3rem;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid #00a3df;
+  margin: 2rem 0;
+}
+
+/* line 68, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-navigation {
+  padding: 1.7em 5%;
+  border-bottom: 1px solid #aaaaaa;
+}
+/* line 71, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-navigation .name {
+  font-weight: 700;
+  font-size: .8em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: 2px solid #aaaaaa;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: #424652;
+  float: left;
+}
+/* line 81, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-navigation .name:hover {
+  color: #00a3df;
+  border: 2px solid #00a3df;
+}
+/* line 86, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-navigation nav {
+  float: right;
+  padding-top: 1rem;
+}
+/* line 89, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-navigation nav a {
+  color: #424652;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 0.9rem;
+}
+/* line 94, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-navigation nav a:hover {
+  color: #00a3df;
+}
+
+/* line 101, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+/* line 107, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#page-title {
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 1rem 0 1.5rem 0;
+  text-transform: uppercase;
+  color: #424652;
+}
+
+/* line 116, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-footer {
+  padding: 1rem 5% 2.5em 5%;
+  border-top: 1px solid #aaaaaa;
+}
+/* line 119, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-footer .copyright {
+  float: left;
+  font-size: 0.9rem;
+  margin: 0;
+}
+/* line 124, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-footer nav {
+  float: right;
+}
+/* line 126, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-footer nav i {
+  color: #424652;
+  margin-left: 1rem;
+  padding-top: 0.2rem;
+}
+/* line 130, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+#main-footer nav i:hover {
+  color: #00a3df;
+}
+
+/* line 135, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 3rem;
+  border: 2px solid #aaaaaa;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+/* line 144, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+textarea {
+  min-height: 15em;
+}
+
+/* line 148, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+input[type="submit"], .button {
+  outline: none;
+  background: transparent;
+  border: 2px solid #aaaaaa;
+  text-align: center;
+  font-size: 1em;
+  color: #424652;
+  text-decoration: none;
+  padding: 1rem 2rem;
+}
+/* line 157, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+input[type="submit"]:hover, .button:hover {
+  border: 2px solid #00a3df;
+  color: #00a3df;
+}
+
+/* line 163, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+.button-wrapper {
+  margin: 3em 0 0 0;
+  text-align: center;
+}
+/* line 166, /Users/copper/Projects/My-Blog/app/assets/stylesheets/application.scss */
+.button-wrapper .project-button {
+  text-decoration: none;
+  background: #00a3df;
+  color: #ffffff;
+  padding: 1em 2em;
+}
+
+/* line 1, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.col-1, .col-2, .col-3 {
+  float: left;
+}
+
+/* line 5, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.col-1 {
+  width: 50%;
+  padding: 0 5% 0 2.5%;
+}
+
+/* line 10, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.col-2, .col-3 {
+  width: 25%;
+  padding: 0 2.5%;
+}
+
+/* line 16, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.homepage-content h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+/* line 20, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.homepage-content h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+/* line 25, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.homepage-content a {
+  text-decoration: none;
+  color: #424652;
+}
+/* line 28, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.homepage-content a:hover {
+  color: #00a3df;
+}
+/* line 32, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.homepage-content .date {
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+  color: #5d6372;
+}
+/* line 37, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.homepage-content p {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+}
+
+/* line 43, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.about {
+  padding: 0 0.75% 0 0;
+}
+/* line 45, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_welcome.scss */
+.about a {
+  color: #00a3df;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* line 1, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#posts-wrapper {
+  padding: 2.2rem 0;
+}
+/* line 3, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#posts-wrapper .post {
+  text-align: center;
+}
+/* line 5, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#posts-wrapper .post .date {
+  font-size: 0.9rem;
+  margin: 0;
+}
+/* line 9, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#posts-wrapper .post h2 {
+  margin-bottom: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* line 14, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#posts-wrapper .post h2 a {
+  text-decoration: none;
+  color: #424652;
+}
+/* line 17, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#posts-wrapper .post h2 a:hover {
+  color: #00a3df;
+}
+/* line 22, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#posts-wrapper .post hr {
+  margin: 1.8em auto;
+}
+
+/* line 31, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#post-show-content header {
+  text-align: center;
+}
+/* line 33, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#post-show-content header .date {
+  font-size: 0.9rem;
+  color: #5d6372;
+  margin: 0;
+}
+/* line 38, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#post-show-content header h1 {
+  margin: 0;
+}
+/* line 42, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#post-show-content hr {
+  margin: 3rem auto;
+}
+
+/* line 47, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#admin-links {
+  text-align: center;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 1rem 0;
+  margin: 3rem 0;
+}
+/* line 53, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#admin-links a {
+  text-decoration: none;
+  color: #00a3df;
+  margin: 0 1rem;
+  font-weight: 700;
+  font-size: .85rem;
+  text-transform: uppercase;
+}
+
+/* line 63, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#share-box {
+  text-align: center;
+}
+/* line 65, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#share-box p {
+  padding: 0 0 1rem 0;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #424652;
+  font-size: 0.8rem;
+}
+/* line 73, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#share-box i {
+  color: #424652;
+  padding: 1rem 1.5rem;
+}
+/* line 76, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+#share-box i:hover {
+  color: #00a3df;
+  cursor: pointer;
+}
+
+/* line 85, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+
+/* line 91, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+.pagination:after {
+  clear: both;
+}
+
+/* line 95, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+.pagination {
+  text-align: center;
+  margin: 0 0 3rem 0;
+}
+/* line 98, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+.pagination a, .pagination .previous-page, .pagination .current, .pagination .next-page {
+  padding: 0.75rem 1rem;
+  margin: 0 0.5rem;
+  line-height: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.7rem;
+  font-style: normal;
+  color: #424652;
+}
+/* line 107, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+.pagination a:hover, .pagination .previous-page:hover, .pagination .current:hover, .pagination .next-page:hover {
+  background: #00a3df;
+  color: #ffffff;
+}
+/* line 112, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+.pagination .current {
+  background: #00a3df;
+  color: #ffffff;
+}
+/* line 116, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+.pagination .disabled {
+  color: #c0c0c0;
+}
+/* line 118, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_posts_and_projects.scss */
+.pagination .disabled:hover {
+  color: #c0c0c0;
+  background: #ffffff;
+}
+
+/*
+   Some simple Github-like styles, with syntax highlighting CSS via Pygments.
+*/
+/* line 5, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+pre {
+  background-color: #eee;
+  padding: 1.5rem 3.5%;
+  margin: 2rem 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+/* line 14, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+code {
+  background-color: #eee;
+  padding: 1px 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 22, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.hll {
+  background-color: #ffffcc;
+}
+
+/* line 23, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.c {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment */
+/* line 24, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+/* Error */
+/* line 25, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.k {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword */
+/* line 26, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.o {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Operator */
+/* line 27, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.cm {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment.Multiline */
+/* line 28, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.cp {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Comment.Preproc */
+/* line 29, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.c1 {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment.Single */
+/* line 30, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Comment.Special */
+/* line 31, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+
+/* Generic.Deleted */
+/* line 32, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.ge {
+  color: #000000;
+  font-style: italic;
+}
+
+/* Generic.Emph */
+/* line 33, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.gr {
+  color: #aa0000;
+}
+
+/* Generic.Error */
+/* line 34, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.gh {
+  color: #999999;
+}
+
+/* Generic.Heading */
+/* line 35, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+
+/* Generic.Inserted */
+/* line 36, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.go {
+  color: #888888;
+}
+
+/* Generic.Output */
+/* line 37, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.gp {
+  color: #555555;
+}
+
+/* Generic.Prompt */
+/* line 38, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.gs {
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+/* line 39, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.gu {
+  color: #aaaaaa;
+}
+
+/* Generic.Subheading */
+/* line 40, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.gt {
+  color: #aa0000;
+}
+
+/* Generic.Traceback */
+/* line 41, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.kc {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Constant */
+/* line 42, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.kd {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Declaration */
+/* line 43, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.kn {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Namespace */
+/* line 44, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.kp {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Pseudo */
+/* line 45, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.kr {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Keyword.Reserved */
+/* line 46, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.kt {
+  color: #445588;
+  font-weight: bold;
+}
+
+/* Keyword.Type */
+/* line 47, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.m {
+  color: #009999;
+}
+
+/* Literal.Number */
+/* line 48, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.s {
+  color: #d01040;
+}
+
+/* Literal.String */
+/* line 49, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.na {
+  color: #008080;
+}
+
+/* Name.Attribute */
+/* line 50, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.nb {
+  color: #0086B3;
+}
+
+/* Name.Builtin */
+/* line 51, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.nc {
+  color: #445588;
+  font-weight: bold;
+}
+
+/* Name.Class */
+/* line 52, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.no {
+  color: #008080;
+}
+
+/* Name.Constant */
+/* line 53, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+
+/* Name.Decorator */
+/* line 54, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.ni {
+  color: #800080;
+}
+
+/* Name.Entity */
+/* line 55, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Exception */
+/* line 56, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.nf {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Function */
+/* line 57, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.nl {
+  color: #990000;
+  font-weight: bold;
+}
+
+/* Name.Label */
+/* line 58, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.nn {
+  color: #555555;
+}
+
+/* Name.Namespace */
+/* line 59, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.nt {
+  color: #000080;
+}
+
+/* Name.Tag */
+/* line 60, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.nv {
+  color: #008080;
+}
+
+/* Name.Variable */
+/* line 61, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.ow {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Operator.Word */
+/* line 62, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.w {
+  color: #bbbbbb;
+}
+
+/* Text.Whitespace */
+/* line 63, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.mf {
+  color: #009999;
+}
+
+/* Literal.Number.Float */
+/* line 64, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.mh {
+  color: #009999;
+}
+
+/* Literal.Number.Hex */
+/* line 65, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.mi {
+  color: #009999;
+}
+
+/* Literal.Number.Integer */
+/* line 66, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.mo {
+  color: #009999;
+}
+
+/* Literal.Number.Oct */
+/* line 67, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.sb {
+  color: #d01040;
+}
+
+/* Literal.String.Backtick */
+/* line 68, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.sc {
+  color: #d01040;
+}
+
+/* Literal.String.Char */
+/* line 69, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.sd {
+  color: #d01040;
+}
+
+/* Literal.String.Doc */
+/* line 70, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.s2 {
+  color: #d01040;
+}
+
+/* Literal.String.Double */
+/* line 71, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.se {
+  color: #d01040;
+}
+
+/* Literal.String.Escape */
+/* line 72, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.sh {
+  color: #d01040;
+}
+
+/* Literal.String.Heredoc */
+/* line 73, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.si {
+  color: #d01040;
+}
+
+/* Literal.String.Interpol */
+/* line 74, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.sx {
+  color: #d01040;
+}
+
+/* Literal.String.Other */
+/* line 75, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.sr {
+  color: #009926;
+}
+
+/* Literal.String.Regex */
+/* line 76, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.s1 {
+  color: #d01040;
+}
+
+/* Literal.String.Single */
+/* line 77, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.ss {
+  color: #990073;
+}
+
+/* Literal.String.Symbol */
+/* line 78, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.bp {
+  color: #999999;
+}
+
+/* Name.Builtin.Pseudo */
+/* line 79, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.vc {
+  color: #008080;
+}
+
+/* Name.Variable.Class */
+/* line 80, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.vg {
+  color: #008080;
+}
+
+/* Name.Variable.Global */
+/* line 81, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.vi {
+  color: #008080;
+}
+
+/* Name.Variable.Instance */
+/* line 82, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_pygments.scss */
+.il {
+  color: #009999;
+}
+
+/* Literal.Number.Integer.Long */
+/* line 1, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_skills.scss */
+#skills, #about, #interests {
+  width: 75%;
+  padding: 0 7em;
+  border-bottom: 1px solid #d6dce0;
+  width: 100%;
+}
+
+/* line 10, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_skills.scss */
+#skills, #interests {
+  background-color: #ddd;
+}
+/* line 12, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_skills.scss */
+#skills ul, #interests ul {
+  width: 80%;
+  height: 18rem;
+  margin: 0 auto;
+}
+/* line 16, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_skills.scss */
+#skills ul li, #interests ul li {
+  list-style: none;
+  margin: auto;
+  float: left;
+}
+/* line 20, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_skills.scss */
+#skills ul li a, #interests ul li a {
+  transition: all .4s ease;
+}
+/* line 22, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_skills.scss */
+#skills ul li a img, #interests ul li a img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #000;
+  -webkit-transition: all .05s ease-out;
+  -moz-transition: all .05s ease-out;
+  -o-transition: all .05s ease-out;
+  transition: all .05s ease-out;
+}
+/* line 34, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_skills.scss */
+#skills ul li a:hover img, #interests ul li a:hover img {
+  transform: scale(1.075);
+  background-color: #444;
+}
+/* line 43, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_skills.scss */
+#skills h4, #interests h4 {
+  width: 100%;
+  text-align: center;
+  margin-left: 1em;
+  padding: 1rem 0;
+}
+
+/* line 1, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+#cv {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 4, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+#cv hr {
+  margin: 2rem auto;
+  width: 10rem;
+}
+/* line 9, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+#cv .main-cv-header #me {
+  float: left;
+}
+/* line 11, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+#cv .main-cv-header #me img {
+  padding-top: 0.3rem;
+  max-width: 12rem;
+  max-height: 12rem;
+}
+/* line 17, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+#cv .main-cv-header .cv-header {
+  float: left;
+  padding-left: 2rem;
+  text-align: left;
+}
+/* line 21, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+#cv .main-cv-header .cv-header h2 {
+  font-size: 1.5rem;
+  color: #00a3df;
+  margin-top: 0.4rem;
+}
+/* line 26, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+#cv .main-cv-header .cv-header p {
+  line-height: 1rem;
+}
+
+/* line 35, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.cv-header ul h3, .personal-statement ul h3, .tech-skills ul h3, .employment ul h3, .education-training ul h3, .interests-achievements ul h3 {
+  font-size: 1.1rem;
+}
+/* line 36, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.cv-header ul li, .personal-statement ul li, .tech-skills ul li, .employment ul li, .education-training ul li, .interests-achievements ul li {
+  font-size: 1rem;
+  margin: 0 0 0 5rem;
+}
+
+/* line 44, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.personal-statement h2, .tech-skills h2, .employment h2, .education-training h2, .interests-achievements h2 {
+  font-size: 1.2rem;
+  color: #00a3df;
+}
+/* line 48, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.personal-statement p, .tech-skills p, .employment p, .education-training p, .interests-achievements p {
+  margin-left: 3rem;
+}
+/* line 51, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.personal-statement h3, .tech-skills h3, .employment h3, .education-training h3, .interests-achievements h3 {
+  font-weight: 700;
+}
+/* line 52, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.personal-statement ul, .tech-skills ul, .employment ul, .education-training ul, .interests-achievements ul {
+  margin-left: 0;
+}
+/* line 54, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.personal-statement ul li, .tech-skills ul li, .employment ul li, .education-training ul li, .interests-achievements ul li {
+  margin-left: 3rem;
+}
+
+/* line 63, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.personal-statement {
+  clear: both;
+}
+
+/* line 68, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.education-training h3 {
+  margin-left: 3rem;
+  font-size: 1.1rem;
+}
+/* line 72, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.education-training p {
+  margin-left: 3rem;
+}
+/* line 74, /Users/copper/Projects/My-Blog/app/assets/stylesheets/_cv.scss */
+.education-training p em {
+  font-size: 0.9rem;
+}
