@@ -1,7 +1,32 @@
 #cv {
+  width: 90%;
+  margin: 0 auto;
   hr {
     margin: 2rem auto;
     width: 10rem;
+  }
+  .main-cv-header {
+    #me {
+      float: left;
+      img {
+        padding-top: 0.3rem;
+        max-width: 12rem;
+        max-height: 12rem;
+      }
+    }
+    .cv-header {
+      float: left;
+      padding-left: 2rem;
+      text-align: left;
+      h2 { 
+        font-size: 1.5rem;
+        color: $light-blue;
+        margin-top: 0.4rem;
+      }
+      p {
+        line-height: 1rem;
+      }
+    }
   }
 }
 
@@ -32,15 +57,11 @@
   }
 }
 
-.cv-header {
-  text-align: center;
-  h2 { 
-    font-size: 1.5rem;
-    color: $light-blue;
-  }
-  p {
-    line-height: 0.6rem;
-  }
+
+
+
+.personal-statement {
+  clear: both;
 }
 
 .education-training {
