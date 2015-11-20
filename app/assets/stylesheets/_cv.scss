@@ -1,0 +1,58 @@
+#cv {
+  hr {
+    margin: 2rem auto;
+    width: 10rem;
+  }
+}
+
+.cv-header, .personal-statement, .tech-skills, .employment, .education-training, .interests-achievements {
+  ul {
+    h3 { font-size: 1.1rem; }
+    li {
+      font-size: 1rem;
+      margin: 0 0 0 5rem;
+    }
+  }
+}
+
+.personal-statement, .tech-skills, .employment, .education-training, .interests-achievements {
+  h2 { 
+    font-size: 1.2rem;
+    color: $light-blue;
+  }
+  p {
+    margin-left: 3rem;
+  }
+  h3 { font-weight: 700; }
+  ul {
+    margin-left: 0;
+    li {
+      margin-left: 3rem;
+    }
+  }
+}
+
+.cv-header {
+  text-align: center;
+  h2 { 
+    font-size: 1.5rem;
+    color: $light-blue;
+  }
+  p {
+    line-height: 0.6rem;
+  }
+}
+
+.education-training {
+  h3 {
+    margin-left: 3rem;
+    font-size: 1.1rem;
+  }
+  p {
+    margin-left: 3rem;
+    em {
+    font-size: 0.9rem;
+    }
+  }
+}
+
