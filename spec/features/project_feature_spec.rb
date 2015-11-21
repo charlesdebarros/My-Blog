@@ -10,48 +10,67 @@ describe Project do
   end
 
   describe 'Adding a project:' do
-    context 'It is a valid project' do
-      it 'successfully adds a project' do
+
+    context 'When a user is logged out' do
+      it 'takes the user to a the users#sign_in page' do
         visit '/projects'
         click_link 'Add a project'
-        fill_in 'Title', with: 'Test project'
-        fill_in 'Link', with: 'http://www.testproject.com'
-        fill_in 'Description', with: 'This is a sample project.'
-        click_button 'Create Project'
 
-        expect(current_path).to eq('/projects')
-        expect(page).to have_content('Test project')
-        expect(page).to have_content('Project successfully created')
+        expect(current_path).to eq '/users/sign_in'
+        expect(page).to have_content ('Log in')
       end
     end
-    context 'It is not a valid project' do
-      it 'fails to add a project' do
-        visit '/projects'
-        click_link 'Add a project'
-        fill_in 'Title', with: ''
-        fill_in 'Link', with: ''
-        fill_in 'Description', with: ''
-        click_button 'Create Project'
 
-        expect(current_path).to eq('/projects')
-        expect(page).not_to have_content('Test Project')
-        expect(page).to have_content('Unable to create project')
+    context 'When the user is logged in' do
+      before do
+        login_as_test_user
       end
-      it 'displays errors if bad data is giving' do
-        visit '/projects'
-        click_link 'Add a project'
-        fill_in 'Title', with: ''
-        fill_in 'Description', with: ''
-        click_button 'Create Project'
 
-        expect(current_path).to eq('/projects')
-        expect(page).to have_content('errors')
+      context 'It is a valid project' do
+        it 'successfully adds a project' do
+          visit '/projects'
+          click_link 'Add a project'
+          fill_in 'Title', with: 'Test project'
+          fill_in 'Link', with: 'http://www.testproject.com'
+          fill_in 'Description', with: 'This is a sample project.'
+          click_button 'Create Project'
+
+          expect(current_path).to eq('/projects')
+          expect(page).to have_content('Test project')
+          expect(page).to have_content('Project successfully created')
+        end
+      end
+      context 'It is not a valid project' do
+        it 'fails to add a project' do
+          visit '/projects'
+          click_link 'Add a project'
+          fill_in 'Title', with: ''
+          fill_in 'Link', with: ''
+          fill_in 'Description', with: ''
+          click_button 'Create Project'
+
+          expect(current_path).to eq('/projects')
+          expect(page).not_to have_content('Test Project')
+          expect(page).to have_content('Unable to create project')
+        end
+        it 'displays errors if bad data is giving' do
+          visit '/projects'
+          click_link 'Add a project'
+          fill_in 'Title', with: ''
+          fill_in 'Description', with: ''
+          click_button 'Create Project'
+
+          expect(current_path).to eq('/projects')
+          expect(page).to have_content('errors')
+        end
       end
     end
   end
+
   describe 'Working with projects' do
     before do
       Project.create(title: 'Test project', link: 'http://www.testpost.com', description: 'This is a sample project.')
+      login_as_test_user
     end
     context 'Displaying a project' do
       it 'displays a project' do

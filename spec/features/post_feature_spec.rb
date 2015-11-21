@@ -10,44 +10,62 @@ describe Post do
   end
 
   describe 'Adding a post:' do
-    context 'It is a valid post' do
-      it 'successfully adds a post' do
+
+    context 'When a user is logged out' do
+      it 'takes the user to a the users#sign_in page' do
         visit '/posts'
         click_link 'Add a post'
-        fill_in 'Title', with: 'Test post'
-        fill_in 'Content', with: 'This is a sample post.'
-        click_button 'Create Post'
 
-        expect(current_path).to eq('/posts')
-        expect(page).to have_content('Test post')
-        expect(page).to have_content('Post successfully created')
+        expect(current_path).to eq '/users/sign_in'
+        expect(page).to have_content ('Log in')
       end
     end
 
-    context 'It is not a valid post' do
-      it 'fails to add a post' do
-        visit '/posts'
-        click_link 'Add a post'
-        fill_in 'Title', with: ''
-        fill_in 'Content', with: ''
-        click_button 'Create Post'
-
-        expect(current_path).to eq('/posts')
-        expect(page).not_to have_content('Test Post')
-        expect(page).to have_content('Unable to add post')
+    context 'When the user is logged in' do
+      before do
+        login_as_test_user
       end
 
-      it 'displays errors if bad data is giving' do
-        visit '/posts'
-        click_link 'Add a post'
-        fill_in 'Title', with: ''
-        fill_in 'Content', with: ''
-        click_button 'Create Post'
+      context 'It is a valid post' do
+        it 'successfully adds a post' do
+          visit '/posts'
+          click_link 'Add a post'
+          fill_in 'Title', with: 'Test post'
+          fill_in 'Content', with: 'This is a sample post.'
+          click_button 'Create Post'
 
-        expect(current_path).to eq('/posts')
-        expect(page).to have_content('errors')
+          expect(current_path).to eq('/posts')
+          expect(page).to have_content('Test post')
+          expect(page).to have_content('Post successfully created')
+        end
       end
+
+      context 'It is not a valid post' do
+        it 'fails to add a post' do
+          visit '/posts'
+          click_link 'Add a post'
+          fill_in 'Title', with: ''
+          fill_in 'Content', with: ''
+          click_button 'Create Post'
+
+          expect(current_path).to eq('/posts')
+          expect(page).not_to have_content('Test Post')
+          expect(page).to have_content('Unable to add post')
+        end
+
+        it 'displays errors if bad data is giving' do
+          visit '/posts'
+          click_link 'Add a post'
+          fill_in 'Title', with: ''
+          fill_in 'Content', with: ''
+          click_button 'Create Post'
+
+          expect(current_path).to eq('/posts')
+          expect(page).to have_content('errors')
+        end
     end
+
+  end
 
     context 'Displaying a post' do
       before do
@@ -68,6 +86,7 @@ describe Post do
 
     before do
       Post.create(title: 'Test post', content: 'This is a sample post.')
+      login_as_test_user
     end
 
     describe 'Editing a post:' do
