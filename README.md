@@ -8,7 +8,11 @@ As I have trained on Ruby and Ruby on Rails, I have chosen them as my options to
 
 My website can is hosted on [Heroku](https://www.heroku.com/) and can be seen [here](https://charlesdebarros.herokuapp.com/).
 
+***
+
 ![image](https://raw.githubusercontent.com/charlesdebarros/My-Blog/master/app/assets/images/screenshot.jpg)
+
+***
 
 ### Technologies used
 
