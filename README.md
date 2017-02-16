@@ -16,7 +16,7 @@ My website can is hosted on [Heroku](https://www.heroku.com/) and can be seen [h
 
 ### Technologies used
 
-* Ruby 2.2.3
+* Ruby 2.3.3
 * Rails 4.2.4
 * PostgreSQL 9.13
 * Sass-Rails 5.0
