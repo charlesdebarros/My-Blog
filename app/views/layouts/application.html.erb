@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Charles De Barros - Wed/Software developer</title>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <header id="main-navigation" class="clearfix">
-    <%= link_to 'Charles De Barros', root_path, class: 'name' %>
-    <nav>
-      <%= link_to 'Articles', posts_path %>
-      <%= link_to 'Projects', projects_path %>
-      <%= link_to 'Contact', new_contact_path %>
-      <%= link_to 'CV', welcome_cv_path %>
-      <% if user_signed_in? %>
-        <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
-      <% end %>
-    </nav>
-  </header>
-
-  <% if notice %>
-    <p class="notice"><%= notice %></p>
-  <% elsif alert %>
-    <p class="alert"><%= alert %></p>
-  <% end %>
-
-  <%= yield %>
-
-  <footer id="main-footer">
-    <p class="copyright">&copy; 2017 Charles De Barros</p>
-    <nav>
-      <a href="https://github.com/charlesdebarros/" target="_blank"><i class="fa fa-github"></i></a>
-      <a href="https://uk.linkedin.com/in/charlesdebarros" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="https://twitter.com/charlesdebarros" target="_blank"><i class="fa fa-twitter"></i></a>
-    </nav>
-  </footer>
-
-</body>
+  <head>
+    <title>Charles De Barros - Wed/Software developer</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header id="main-navigation" class="clearfix">
+      <%= link_to 'Charles De Barros', root_path, class: 'name' %>
+      <nav>
+        <% link_to 'Articles', posts_path %>
+        <%= link_to 'Projects', projects_path %>
+        <%= link_to 'Contact', new_contact_path %>
+        <%= link_to 'CV', welcome_cv_path %>
+        <% if user_signed_in? %>
+          <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+        <% end %>
+      </nav>
+    </header>
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+    <%= yield %>
+    <footer id="main-footer">
+      <p class="copyright">&copy; 2017 Charles De Barros</p>
+      <nav>
+        <a href="https://github.com/charlesdebarros/" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://uk.linkedin.com/in/charlesdebarros" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://twitter.com/charlesdebarros" target="_blank"><i class="fa fa-twitter"></i></a>
+      </nav>
+    </footer>
+  </body>
 </html>
