@@ -23,6 +23,11 @@
       margin: 1.8em auto;
     }
   }
+  @media screen and (max-width: $break-small) {
+    .post {
+      h3 { font-size: 1.2rem; }
+    }
+  }
 }
 
 // ----- Post Show
@@ -82,7 +87,7 @@
 
 // ----- Pagination
 
-.pagination:before, 
+.pagination:before,
 .pagination:after {
   content: " ";
   display: table;
@@ -90,7 +95,7 @@
 
 .pagination:after {
   clear: both;
-} 
+}
 
 .pagination {
   text-align: center;

@@ -18,7 +18,7 @@
       float: left;
       padding-left: 2rem;
       text-align: left;
-      h2 { 
+      h2 {
         font-size: 1.5rem;
         color: $light-blue;
         margin-top: 0.4rem;
@@ -41,6 +41,32 @@
       }
     }
   }
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+    hr {
+      margin: auto;
+    }
+    .main-cv-header {
+      #me {
+        img {
+          float: none;
+          padding: 0;
+          margin: -8% 30% 0 30%;
+          width: 40%;
+          height: 40%;
+        }
+      }
+      .cv-header {
+        width: 100%;
+        padding: 0;
+        h2 {
+          font-size: 1.2rem;
+          text-align: center;
+          padding-bottom: 5%;
+        }
+      }
+    }
+  }
 }
 
 .cv-header, .personal-statement, .tech-skills, .employment, .education-training, .interests-achievements {
@@ -51,10 +77,15 @@
       margin: 0 0 0 5rem;
     }
   }
+  @media screen and (max-width: $break-small) {
+    ul{
+      h3 { font-size: 0.9rem; }
+    }
+  }
 }
 
 .personal-statement, .tech-skills, .employment, .education-training, .interests-achievements {
-  h2 { 
+  h2 {
     font-size: 1.2rem;
     color: $light-blue;
   }
@@ -64,8 +95,24 @@
   h3 { font-weight: 700; }
   ul {
     margin-left: 0;
+    padding-left: 1rem;
     li {
       margin-left: 3rem;
+    }
+  }
+  @media screen and (max-width: $break-small) {
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      margin-left: 1rem;
+    }
+    ul {
+      margin-bottom: 0;
+      li {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
     }
   }
 }
@@ -87,6 +134,20 @@
     em {
     font-size: 0.9rem;
     }
+  }
+  @media screen and (max-width: $break-small) {
+    h3 {
+      font-size: 0.9rem;
+      margin-left: 1rem;
+    }
+    p {
+      margin-left: 2rem;
+      em {
+        margin-left: -2rem;
+        font-size: 0.75rem;
+      }
+    }
+    ul { margin-left: 1rem; }
   }
 }
 
