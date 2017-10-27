@@ -1,49 +1,80 @@
 #skills, #about, #interests {
-  width: 75%;
+  width: 100%;
   padding: 0 7em;
   border-bottom: 1px solid #d6dce0;
-  width: 100%;
+  @media screen and (max-width: $break-small) {
+    padding: 0;
+  }
 }
 
 // Skills
 
 #skills, #interests {
   background-color: #ddd;
-  ul {
-    width: 80%;
-    height: 18rem;
-    margin: 0 auto;
-    li {
-      list-style: none;
-      margin: auto;
-      float: left;
-      a {
-        transition: all .4s ease;
-        img {
-          width: 100px;
-          height: 100px;
-          margin: 5px;
-          padding: 5px;
-          border: 1px solid #000;
-          -webkit-transition: all .05s ease-out;
-          -moz-transition: all .05s ease-out;
-          -o-transition: all .05s ease-out;
-          transition: all .05s ease-out;
+  .skills-box, .insterests-box {
+    ul {
+      width: 80%;
+      height: 18rem;
+      margin: 0 auto;
+      @media screen and (max-width: $break-small) {
+        width: auto;
+        margin: auto 10%;
+        height: 21rem;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        margin: auto;
+        float: left;
+        @media screen and (max-width: $break-small) {
         }
-        &:hover {
+        a {
+          transition: all .4s ease;
           img {
-            transform: scale(1.075);
-            background-color: #444;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #000;
+            -webkit-transition: all .05s ease-out;
+            -moz-transition: all .05s ease-out;
+            -o-transition: all .05s ease-out;
+            transition: all .05s ease-out;
+          }
+          &:hover {
+            img {
+              transform: scale(1.075);
+              background-color: #444;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: $break-small) {
+      padding: none;
+      margin: auto;
+      ul {
+        li {
+          a {
+            img {
+              width: 63px;
+              height: 63px;
+            }
           }
         }
       }
     }
   }
-  
+
   h4 {
     width: 100%;
     text-align: center;
     margin-left: 1em;
     padding: 1rem 0;
+    @media screen and (max-width: $break-small) {
+      width: 90%;
+      font-size: 0.9rem;
+      padding: 0;
+    }
   }
 }

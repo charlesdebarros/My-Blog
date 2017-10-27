@@ -38,6 +38,11 @@
     margin: 0 0 0.75rem 0;
     font-size: 1rem;
   }
+  @media screen and (max-width: $break-small) {
+    p {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 .about {

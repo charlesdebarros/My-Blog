@@ -1,33 +1,11 @@
+<h1 id="page-title">Welcome</h1>
 <div class="wrapper wrapper-padding clearfix">
-    <div class="col-1 about homepage-content">
-        <h2>About</h2>
-        <hr>
-        <p>Before you continue, please keep in mind that <strong><em>I am in the process of redoing this site</em></strong> so please forgive me if something is broken and I missed it. Drop me a line and I will strive to have it fixed it as quickly as I can. Thank you.  ;)
-        </p>
-
-        <p>Hello and thank you for stopping by. My name is Charles.</p>
-
-        <p>I'm a <a href="http://www.makersacademy.com/">Makers Academy</a> graduate and former Senior Network Administrator. I'm also a Rubyist, Rails admirer, Test Driven Development advocate and overal technology explorer. My aim is to learn at least one new thing every single day.</p>
-
-        <p>I am a natural explorer. I like to find out how things work and what makes them tick. I enjoy putting things apart and putting them back together. Though sometimes I am left with a few "spare" bits. But that does not happen only to me, does it? </p>
-        <p><%= link_to 'Read more', welcome_about_path %></p>
-    </div>
-    <div class="col-2 homepage-content">
-        <h2>Things I've written</h2>
-        <hr>
-        <% @posts.each do |post| %>
-        <h3><a href="#"><%= link_to post.title, post %></a></h3>
-        <p class="date"><%= post.created_at.strftime('%A, %d %b %Y') %></p>
-        <hr>
-        <% end %>
-    </div>
-    <div class="col-3 homepage-content">
-        <h2>Things I've built</h2>
-        <hr>
-        <% @projects.each do |project| %>
-            <h3><a href="#"><%= link_to project.title, project %></a></h3>
-            <p class="date"><%= project.created_at.strftime('%A, %d %b %Y') %></p>
-            <hr>
-        <% end %>
-    </div>
+  <div class="about homepage-content">
+    <p>Before you continue, please keep in mind that <strong><em>I am in the process of redoing this site</em></strong> so please forgive me if something is broken and I missed it. Drop me a line and I will strive to have it fixed it as quickly as I can. Thank you.  ;)
+    </p>
+    <p>Hello and thank you for stopping by. My name is Charles.</p>
+    <p>I'm a <a href="http://www.makersacademy.com/">Makers Academy</a> graduate and former Senior Network Administrator. I'm also a Rubyist, Rails admirer, Test Driven Development advocate and overal technology explorer. My aim is to learn at least one new thing every single day.</p>
+    <p>I am a natural explorer. I like to find out how things work and what makes them tick. I enjoy putting things apart and putting them back together. Though sometimes I am left with a few "spare" bits. But that does not happen only to me, does it? </p>
+    <p><%= link_to 'Read more', welcome_about_path %></p>
+  </div>
 </div>

@@ -5,6 +5,9 @@ $lighter-grey: #5d6372;
 $light-blue: #00a3df;
 $border: #aaaaaa;
 
+$break-small: 420px;
+$break-large: 1200px;
+
 * {
   box-sizing: border-box;
 }
@@ -66,11 +69,14 @@ hr {
 }
 
 #main-navigation {
-  padding: 1.7em 5%;
+  padding: 1.7rem 5%;
   border-bottom: 1px solid $border;
+  @media screen and (max-width: $break-small) {
+    padding: 0.9em 5%;
+  }
   .name {
     font-weight: 700;
-    font-size: .8em;
+    font-size: .8rem;
     letter-spacing: 3px;
     text-transform: uppercase;
     border: 2px solid $border;
@@ -81,6 +87,13 @@ hr {
     &:hover {
       color: $light-blue;
       border: 2px solid $light-blue;
+    }
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+      text-align: center;
+      .name {
+        float: none;
+      }
     }
   }
   nav {
@@ -93,14 +106,21 @@ hr {
       font-size: 0.9rem;
       &:hover {
         color: $light-blue;
-      }      
+      }
+    }
+    @media screen and (max-width: $break-small) {
+      width: auto;
+      text-align: center;
+      float: none;
+      clear: both;
+      padding: 7% 5% 3% 5%;
     }
   }
 }
 
 .notice, .alert {
   text-align: center;
-  padding: 1em 0;
+  padding: 1rem 0;
   border-bottom: 1px solid $border;
 }
 
@@ -111,10 +131,14 @@ hr {
     padding: 1rem 0 1.5rem 0;
     text-transform: uppercase;
     color: $dark-grey;
+    @media screen and (max-width: $break-small) {
+      font-size: 0.9rem;
+      padding: 0.7rem 0 1.2rem 0;
+    }
 }
 
 #main-footer {
-  padding: 1rem 5% 2.5em 5%;
+  padding: 1rem 5% 2.5rem 5%;
   border-top: 1px solid $border;
   .copyright {
     float: left;
@@ -168,7 +192,7 @@ input[type="submit"], .button {
     background: $light-blue;
     color: $white;
     padding: 1em 2em;
-  } 
+  }
 }
 
 
