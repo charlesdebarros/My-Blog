@@ -52,4 +52,21 @@
     font-weight: 700;
     text-decoration: none;
   }
+  .index_me {
+    text-align: center;
+    img {
+      width: 20%;
+      height: 20%;
+      margin-bottom: 45px;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+    }
+    @media screen and (max-width: $break-small) {
+      img {
+        width: 50%;
+        height: 50%;
+        margin: -15px 0 15px 0;
+      }
+    }
+  }
 }
