@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'pg'
 gem 'pygments.rb', '~> 0.6.3'
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.5.1'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
