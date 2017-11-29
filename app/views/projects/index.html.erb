@@ -11,7 +11,9 @@
     <% else %>
       <h3>No projects added yet.</h3>
     <% end %>
-    <%= link_to 'Add a project', new_project_path %>
+    <% if user_signed_in? %>
+      <%= link_to 'Add a project', new_project_path %>
+    <% end %>
   </div>
   <br>
 </div>
