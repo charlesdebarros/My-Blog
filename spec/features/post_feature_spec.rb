@@ -12,12 +12,9 @@ describe Post do
   describe 'Adding a post:' do
 
     context 'When a user is logged out' do
-      it 'takes the user to a the users#sign_in page' do
+      it 'does not display "Add a post" link' do
         visit '/posts'
-        click_link 'Add a post'
-
-        expect(current_path).to eq '/users/sign_in'
-        expect(page).to have_content ('Log in')
+        expect(page).not_to have_link ('Add a post')
       end
     end
 
@@ -63,9 +60,9 @@ describe Post do
           expect(current_path).to eq('/posts')
           expect(page).to have_content('errors')
         end
-    end
+      end
 
-  end
+    end
 
     context 'Displaying a post' do
       before do
@@ -133,14 +130,3 @@ describe Post do
     end
   end
 end
-
-
-
-
-
-
-
-
-
-
-

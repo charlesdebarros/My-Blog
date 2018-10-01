@@ -11,7 +11,9 @@
     <% else %>
       <h3>No posts added yet.</h3>
     <% end %>
-    <%= link_to 'Add a post', new_post_path %>
+    <% if user_signed_in? %>
+      <%= link_to 'Add a post', new_post_path %>
+    <% end %>
   </div>
   <br>
   <%= will_paginate @posts %>

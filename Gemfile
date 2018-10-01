@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.3.5'
+ruby '2.5.0'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'devise', '~> 3.5', '>= 3.5.2'
+gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'friendly_id', '~> 5.1'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
@@ -25,11 +25,11 @@ group :development, :test do
 end
 
 group :development do
-  gem 'skylight', '~> 3.0'
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
 
 group :production do
+  gem 'skylight', '~> 3.0'
   gem 'rails_12factor', '~> 0.0.3'
 end

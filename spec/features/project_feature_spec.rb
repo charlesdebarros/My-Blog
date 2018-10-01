@@ -12,12 +12,9 @@ describe Project do
   describe 'Adding a project:' do
 
     context 'When a user is logged out' do
-      it 'takes the user to a the users#sign_in page' do
+      it 'does not display "Add a project" link' do
         visit '/projects'
-        click_link 'Add a project'
-
-        expect(current_path).to eq '/users/sign_in'
-        expect(page).to have_content ('Log in')
+        expect(page).not_to have_link ('Add a project')
       end
     end
 
@@ -132,10 +129,3 @@ describe Project do
     end
   end
 end
-
-
-
-
-
-
-
