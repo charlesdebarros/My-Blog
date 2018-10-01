@@ -25,6 +25,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'skylight', '~> 3.0'
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
