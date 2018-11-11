@@ -50,6 +50,7 @@
         }
       }
     }
+    .clear { clear: both; }
     @media screen and (max-width: $break-small) {
       padding: none;
       margin: auto;
