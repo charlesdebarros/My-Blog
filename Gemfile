@@ -6,10 +6,10 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'friendly_id', '~> 5.1'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
-gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'mail_form'
 gem 'pg', '0.21.0'
 gem 'pygments.rb', '~> 1.2'
-gem 'rails', '4.2.10'
+gem 'rails', '5.0.7.1'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
@@ -30,6 +30,6 @@ group :development do
 end
 
 group :production do
-  gem 'skylight', '~> 3.0'
   gem 'rails_12factor', '~> 0.0.3'
+  gem 'skylight', '~> 3.0'
 end
