@@ -16,13 +16,11 @@ My website can is hosted on [Heroku](https://www.heroku.com/) and can be seen [h
 
 ### Technologies used
 
-* Ruby 2.3.5
-* Rails 4.2.4
-* PostgreSQL 9.13
-* Sass-Rails 5.0
-*
-
-* Gems
+* Ruby 2.5.X
+* Rails 5.0.X
+* PostgreSQL 9.6.X
+* Sass-Rails 5.0.X
+* Ruby Gems:
   - Redcarpet 3.3
   - Pygments 0.6.3
   - Frindly ID 5.1
