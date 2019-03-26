@@ -436,98 +436,98 @@ th {
   padding: 0;
 }
 
-/* line 11, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 14, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 15, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 18, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 body {
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 19, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 22, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 .wrapper {
   width: 90%;
   margin: 0 auto;
 }
 
-/* line 24, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 27, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 .skinny-wrapper {
   width: 80%;
   max-width: 760px;
   margin: 0 auto;
 }
 
-/* line 30, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 33, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 .wrapper-padding {
-  padding: 2rem 0;
+  padding: 2rem 0 3rem 0;
 }
 
-/* line 34, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 37, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 40, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 43, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 45, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 48, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 .hidden {
   display: none;
 }
 
-/* line 49, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 52, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #424652;
 }
 
-/* line 53, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 56, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 h1 {
   font-size: 2.5rem;
 }
 
-/* line 54, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 57, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 h2 {
   font-size: 2rem;
 }
 
-/* line 55, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 58, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 h3 {
   font-size: 1.75rem;
 }
 
-/* line 56, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 59, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 h4 {
   font-size: 1.375rem;
 }
 
-/* line 57, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 60, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 h5 {
   font-size: 1.25rem;
 }
 
-/* line 58, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 61, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 59, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 62, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 p, li {
   font-size: 1.1em;
   line-height: 1.75;
 }
 
-/* line 60, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 63, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 p, ul, ol {
   margin: 0 0 1.6rem 0;
 }
 
-/* line 62, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 65, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 hr {
   width: 3rem;
   display: block;
@@ -537,63 +537,68 @@ hr {
   margin: 2rem 0;
 }
 
-/* line 71, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 74, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-navigation {
-  padding: 1.7rem 5%;
-  border-bottom: 1px solid #aaaaaa;
+  padding: .75rem 5%;
+  background-color: #000000;
+  border-bottom: 5px solid #DAA82F;
 }
 @media screen and (max-width: 420px) {
-  /* line 71, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+  /* line 74, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
   #main-navigation {
     padding: 0.9em 5%;
   }
 }
-/* line 77, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 81, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-navigation .name {
   font-weight: 700;
   font-size: .8rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  border: 2px solid #aaaaaa;
+  border: 2px solid #DAA82F;
   padding: 1rem 1.5rem;
   text-decoration: none;
-  color: #424652;
+  color: #DAA82F;
   float: left;
 }
-/* line 87, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 91, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-navigation .name:hover {
   color: #00a3df;
   border: 2px solid #00a3df;
 }
 @media screen and (max-width: 420px) {
-  /* line 77, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+  /* line 81, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
   #main-navigation .name {
     width: 100%;
     text-align: center;
   }
-  /* line 94, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+  /* line 98, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
   #main-navigation .name .name {
     float: none;
   }
 }
-/* line 99, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 103, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-navigation nav {
   float: right;
   padding-top: 1rem;
 }
-/* line 102, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 106, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-navigation nav a {
-  color: #424652;
+  color: #dddddd;
   text-decoration: none;
   margin: 0 1rem;
   font-size: 0.9rem;
 }
-/* line 107, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 111, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+#main-navigation nav a:active {
+  color: #00a3df;
+}
+/* line 114, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-navigation nav a:hover {
   color: #00a3df;
 }
 @media screen and (max-width: 420px) {
-  /* line 99, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+  /* line 103, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
   #main-navigation nav {
     width: auto;
     text-align: center;
@@ -603,57 +608,71 @@ hr {
   }
 }
 
-/* line 121, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 128, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 .notice, .alert {
   text-align: center;
   padding: 1rem 0;
-  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 0;
 }
 
-/* line 127, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 134, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+.notice {
+  background-color: #DAA82F;
+}
+
+/* line 138, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #page-title {
   font-size: 1rem;
   text-align: center;
-  border-bottom: 1px solid #aaaaaa;
-  padding: 1rem 0 1.5rem 0;
+  margin-top: 0;
+  background-color: #DAA82F;
+  border-top: 5px solid #000000;
+  padding: 1.5rem 0;
   text-transform: uppercase;
-  color: #424652;
+  color: #ffffff;
 }
 @media screen and (max-width: 420px) {
-  /* line 127, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+  /* line 138, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
   #page-title {
     font-size: 0.9rem;
-    padding: 0.7rem 0 1.2rem 0;
+    margin-top: 0;
+    padding: 0.7rem 0;
   }
 }
 
-/* line 140, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 154, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-footer {
-  padding: 1rem 5% 2.5rem 5%;
-  border-top: 1px solid #aaaaaa;
+  padding: 1rem 5% 0 5%;
+  clear: top;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #000000;
+  color: #dddddd;
+  border-top: 5px solid #DAA82F;
 }
-/* line 143, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 163, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-footer .copyright {
   float: left;
   font-size: 0.9rem;
   margin: 0;
 }
-/* line 148, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 168, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-footer nav {
   float: right;
 }
-/* line 150, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 170, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-footer nav i {
-  color: #424652;
+  color: #dddddd;
   margin-left: 1rem;
   padding-top: 0.2rem;
 }
-/* line 154, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 174, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 #main-footer nav i:hover {
   color: #00a3df;
 }
 
-/* line 159, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 179, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
   max-width: 100%;
@@ -663,12 +682,12 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   margin: 0.5rem 0 1rem 0;
 }
 
-/* line 168, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 188, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 textarea {
   min-height: 15em;
 }
 
-/* line 172, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 192, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 input[type="submit"], .button {
   outline: none;
   background: transparent;
@@ -679,18 +698,18 @@ input[type="submit"], .button {
   text-decoration: none;
   padding: 1rem 2rem;
 }
-/* line 181, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 201, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 input[type="submit"]:hover, .button:hover {
   border: 2px solid #00a3df;
   color: #00a3df;
 }
 
-/* line 187, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 207, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 .button-wrapper {
-  margin: 3em 0 0 0;
+  margin: 3em 0 2em 0;
   text-align: center;
 }
-/* line 190, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
+/* line 210, /Users/charles/Cloned/Rails/My-Blog/app/assets/stylesheets/application.scss */
 .button-wrapper .project-button {
   text-decoration: none;
   background: #00a3df;
