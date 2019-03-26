@@ -10,7 +10,6 @@ describe Post do
   end
 
   describe 'Adding a post:' do
-
     context 'When a user is logged out' do
       it 'does not display "Add a post" link' do
         visit '/posts'
@@ -21,12 +20,12 @@ describe Post do
     context 'When the user is logged in' do
       before do
         login_as_test_user
+        visit '/posts'
+        click_link 'Add a post'
       end
 
       context 'It is a valid post' do
         it 'successfully adds a post' do
-          visit '/posts'
-          click_link 'Add a post'
           fill_in 'Title', with: 'Test post'
           fill_in 'Content', with: 'This is a sample post.'
           click_button 'Create Post'
@@ -39,8 +38,6 @@ describe Post do
 
       context 'It is not a valid post' do
         it 'fails to add a post' do
-          visit '/posts'
-          click_link 'Add a post'
           fill_in 'Title', with: ''
           fill_in 'Content', with: ''
           click_button 'Create Post'
@@ -51,8 +48,6 @@ describe Post do
         end
 
         it 'displays errors if bad data is giving' do
-          visit '/posts'
-          click_link 'Add a post'
           fill_in 'Title', with: ''
           fill_in 'Content', with: ''
           click_button 'Create Post'
@@ -61,7 +56,6 @@ describe Post do
           expect(page).to have_content('errors')
         end
       end
-
     end
 
     context 'Displaying a post' do
@@ -80,16 +74,15 @@ describe Post do
   end
 
   context 'Working with posts' do
-
     before do
       Post.create(title: 'Test post', content: 'This is a sample post.')
       login_as_test_user
+      visit '/posts/test-post'
+      click_link 'Edit'
     end
 
     describe 'Editing a post:' do
       it 'updates the post details' do
-        visit '/posts/test-post'
-        click_link 'Edit'
         fill_in 'Title', with: 'Old test post'
         fill_in 'Content', with: 'This is an old sample post.'
         click_button 'Update Post'
@@ -99,8 +92,6 @@ describe Post do
       end
 
       it 'updates the post with invalid data' do
-        visit '/posts/test-post'
-        click_link 'Edit'
         fill_in 'Title', with: ''
         fill_in 'Content', with: 'This is an old sample post.'
         click_button 'Update Post'
@@ -109,8 +100,6 @@ describe Post do
       end
 
       it 'displays error messages when data is invalid' do
-        visit '/posts/test-post'
-        click_link 'Edit'
         fill_in 'Title', with: ''
         fill_in 'Content', with: ''
         click_button 'Update Post'

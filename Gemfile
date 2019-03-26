@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.5.0'
+ruby '2.5.3'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'friendly_id', '~> 5.1'
@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'mail_form'
 gem 'pg', '0.21.0'
 gem 'pygments.rb', '~> 1.2'
-gem 'rails', '5.0.7.1'
+gem 'rails', '5.0.7.2'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'sass-rails', '~> 5.0'
 gem 'sdoc', '~> 0.4.0', group: :doc

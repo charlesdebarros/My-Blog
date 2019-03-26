@@ -10,23 +10,22 @@ describe Project do
   end
 
   describe 'Adding a project:' do
-
     context 'When a user is logged out' do
       it 'does not display "Add a project" link' do
         visit '/projects'
-        expect(page).not_to have_link ('Add a project')
+        expect(page).not_to have_link('Add a project')
       end
     end
 
     context 'When the user is logged in' do
       before do
         login_as_test_user
+        visit '/projects'
+        click_link 'Add a project'
       end
 
       context 'It is a valid project' do
         it 'successfully adds a project' do
-          visit '/projects'
-          click_link 'Add a project'
           fill_in 'Title', with: 'Test project'
           fill_in 'Link', with: 'http://www.testproject.com'
           fill_in 'Description', with: 'This is a sample project.'
@@ -37,10 +36,9 @@ describe Project do
           expect(page).to have_content('Project successfully created')
         end
       end
+
       context 'It is not a valid project' do
         it 'fails to add a project' do
-          visit '/projects'
-          click_link 'Add a project'
           fill_in 'Title', with: ''
           fill_in 'Link', with: ''
           fill_in 'Description', with: ''
@@ -50,9 +48,8 @@ describe Project do
           expect(page).not_to have_content('Test Project')
           expect(page).to have_content('Unable to create project')
         end
+
         it 'displays errors if bad data is giving' do
-          visit '/projects'
-          click_link 'Add a project'
           fill_in 'Title', with: ''
           fill_in 'Description', with: ''
           click_button 'Create Project'
@@ -66,7 +63,11 @@ describe Project do
 
   describe 'Working with projects' do
     before do
-      Project.create(title: 'Test project', link: 'http://www.testpost.com', description: 'This is a sample project.')
+      Project.create(
+        title: 'Test project',
+        link: 'http://www.testpost.com',
+        description: 'This is a sample project.'
+      )
       login_as_test_user
     end
     context 'Displaying a project' do
@@ -78,6 +79,7 @@ describe Project do
         expect(page).to have_content('This is a sample project.')
       end
     end
+
     context 'Editing a project' do
       it 'updates the project\'s details' do
         visit '/projects/test-project'
@@ -117,6 +119,7 @@ describe Project do
         expect(page).to have_content('Description can\'t be blank')
       end
     end
+
     context 'Deleting a post' do
       it 'destroys the project record permanently' do
         visit '/projects/test-project'
