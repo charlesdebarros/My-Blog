@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.5.3'
+ruby '2.6.3'
 gem 'coffee-rails', '~> 4.1.1'
 gem 'devise', '~> 4.6', '>= 4.6.1'
 gem 'friendly_id', '~> 5.1'
