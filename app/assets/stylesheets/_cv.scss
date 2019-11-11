@@ -5,6 +5,7 @@
     margin: 2rem auto;
     width: 10rem;
   }
+
   .main-cv-header {
     #me {
       float: left;
@@ -74,7 +75,7 @@
     h3 { font-size: 1.1rem; }
     li {
       font-size: 1rem;
-      margin: 0 0 0 5rem;
+
     }
   }
   @media screen and (max-width: $break-small) {
@@ -84,20 +85,18 @@
   }
 }
 
-.personal-statement, .tech-skills, .employment, .education-training, .interests-achievements {
+.personal-statement, .tech-skills, .employment, .interests-achievements {
   h2 {
     font-size: 1.2rem;
     color: $light-blue;
   }
-  p {
-    margin-left: 3rem;
-  }
+
   h3 { font-weight: 700; }
   ul {
-    margin-left: 0;
+    margin-left: 3rem;
     padding-left: 1rem;
     li {
-      margin-left: 3rem;
+      margin-left: 1rem;
     }
   }
   @media screen and (max-width: $break-small) {
@@ -117,6 +116,36 @@
   }
 }
 
+.education-training {
+  h2 {
+    font-size: 1.2rem;
+    color: $light-blue;
+  }
+
+  h3 { font-weight: 700; }
+  ul {
+    margin-left: 0rem;
+    padding-left: 1rem;
+    li {
+      margin-left: 0rem;
+    }
+  }
+  @media screen and (max-width: $break-small) {
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      margin-left: 1rem;
+    }
+    ul {
+      margin-bottom: 0;
+      li {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
 
 
 
