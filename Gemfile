@@ -22,7 +22,7 @@ gem 'will_paginate', '~> 3.0', '>= 3.0.7'
 group :development, :test do
   gem 'byebug'
   gem 'capybara', '~> 2.18', '>= 2.18.0'
-  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
+  gem 'rspec-rails', '~> 3.9', '>= 3.9.0'
 end
 
 group :development do
