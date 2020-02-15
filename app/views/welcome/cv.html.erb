@@ -9,9 +9,9 @@
         <div class="cv-header">
           <h2>Charles De Barros</h2>
           <p><strong>Mobile:</strong> 0753 444 8169</p>
-          <p><strong>Email:</strong> <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#104;&#97;&#114;&#108;&#101;&#115;&#100;&#101;&#98;&#97;&#114;&#114;&#111;&#115;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#46;&#117;&#107;">Charles De Barros</a></p>
-          <p><strong>GitHub:</strong> <%= link_to "https://github.com/charlesdebarros/", target: '_blank' %></p>
-          <p><strong>LinkedIn:</strong> <%= link_to "https://www.linkedin.com/in/charlesdebarros", target: '_blank' %></p>
+          <p><strong>Email:</strong> <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#104;&#097;&#114;&#108;&#101;&#115;&#100;&#101;&#098;&#097;&#114;&#114;&#111;&#115;&#064;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;">Charles De Barros</a></p>
+          <p><strong>GitHub:</strong> <%= link_to 'https://github.com/charlesdebarros/', 'https://github.com/charlesdebarros/', target: '_blank', rel: 'nofollow' %></p>
+          <p><strong>LinkedIn:</strong> <%= link_to 'https://www.linkedin.com/in/charlesdebarros', 'https://www.linkedin.com/in/charlesdebarros', target: '_blank', rel: 'nofollow' %></p>
         </div>
       </div>
       <br>
@@ -38,7 +38,10 @@
       <div class="employment">
         <h2>Employment History</h2>
         <ul>
-          <h3>02/18 – 10/19 - UCL Institute of Education  ->  CLOSER Programmer</h3>
+          <h3>10/19 - Present - Sabbatical</h3>
+        </ul>
+        <ul>
+          <h3>02/18 – 10/19 - UCL - The Institute of Education  ->  CLOSER Programmer</h3>
           <p>I worked as a Fullstack developer responsible for developing, improving and maintaining Archivist, CLOSER’s application which manages various Longitudinal datasets from various studies from 1930s to this day. Archivist is built on a Ruby on Rails backend with AngularJS frontend. Archivist has some parsers specially built for it to parse XML files and other dataset specific formats. It is also reliant on PostgreSQL, Redis, XML and various other libraries. Archivist has been developed as an Open Source project and is hosted on Heroku.</p>
         </ul>
         <ul>
@@ -82,10 +85,7 @@
         <h2>Education and IT Training</h2>
         <ul>
           <h3>17/02-09/05 - Makers Academy, London -> Web/Software Junior Development</h3>
-          <p>Makers Academy is a 12-week web development bootcamp aiming to teach Ruby/Rails, TDD, HMTL/CSS/JavaScript, Git, Heroku, Agile and LEAN methodologies, database manipulation and software design among other things. Everything is put together in a final project. See my group’s final project, Slate, live at <a href="http://sl8.herokuapp.com/">Slate</a> hosted on Heroku.
-          </p>
-          <p>
-            Some of my Makers Academy tasks and projects are available on my Github profile.
+          <p>Makers Academy is a 12-week web development bootcamp aiming to teach Ruby/Rails, TDD, HMTL/CSS/JavaScript, Git, Heroku, Agile and LEAN methodologies, database manipulation and software design among other things. Everything is put together in a final project. See my group’s final project, Slate, live at <em><a href="http://sl8.herokuapp.com/">Slate</a></em> hosted on Heroku.
           </p>
         </ul>
         <ul>
@@ -103,14 +103,15 @@
       <div class="interests-achievements">
         <h2>Interests and Achievements</h2>
         <ul>
-          <li><strong>Computing:</strong> Linux OS (Fedora and Mint). I like puzzles and problem solving tasks. I am working my way up on <span style="color: #00a3df !important;"><%= link_to 'CodeWars', "https://www.codewars.com" %></span>. I enjoy learning new things and I have taken a few courses on <span style="color: #00a3df !important;"><%= link_to 'edX', "https://www.edx.org/" %></span>, <span style="color: #00a3df !important;"><%= link_to 'Udemy', "https://www.udemy.com/" %></span> and <span style="color: #00a3df !important;"><%= link_to 'Coursera', "https://www.coursera.org/" %></span>.</li>
+          <li><strong>Computing:</strong> Linux OS (Fedora, Ubuntu, and Mint). I like puzzles and problem solving tasks. I am working my way up on <em><span style="color: #00a3df !important;"><%= link_to 'CodeWars', "https://www.codewars.com" %></span></em>. I enjoy learning new things and I have taken a few courses on <em><span style="color: #00a3df !important;"><%= link_to 'edX', "https://www.edx.org/" %></span></em>, <em><span style="color: #00a3df !important;"><%= link_to 'Udemy', "https://www.udemy.com/" %></span></em> and <em><span style="color: #00a3df !important;"><%= link_to 'Coursera', "https://www.coursera.org/" %></span></em>.</li>
+          <li><strong>Public Speaking: </strong>I represented CLOSER at <em><span style="color: #00a3df !important;"><%= link_to 'EDDI 2018', "https://www.eddi-conferences.eu/eddi-2018/" %></span></em> in Berlin, and presented a talk at <em><span style="color: #00a3df !important;"><%= link_to 'NADDI 2019', "http://naddiconf.org/2019/" %></span></em> in Ottawa, Canada.</li>
           <li><strong>Hobbies:</strong> Filmmaking, photography, historical fiction, languages, baking</li>
           <li><strong>Language:</strong>  Native level Portuguese and English.</li>
         </ul>
       </div>
       <br>
       <div class="button-wrapper">
-        <p><%= link_to 'Download my CV', "https://drive.google.com/file/d/1Ojc_pUqNW3-5AzrTUIC4iAIo5E3oHf0G/view?usp=sharing", class: "project-button", target: '_blank' %></p>
+        <p><%= link_to 'Download my CV', "https://drive.google.com/file/d/1m_MGWfe7HNzdOpPrc_IwlkrCbUMgLXKR/view?usp=sharing", class: "project-button", target: '_blank' %></p>
       </div>
     </div>
   </div>
