@@ -29,6 +29,19 @@
       color: $light-blue;
     }
   }
+
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        color: $light-blue;
+        &:hover {
+          color: $light-blue;
+          font-weight: 700;
+        }
+      }
+    }
+  }
   .date {
     font-size: 0.85rem;
     margin-bottom: 2rem;

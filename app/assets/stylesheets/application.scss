@@ -72,7 +72,7 @@ hr {
 }
 
 #main-navigation {
-  padding: .75rem 5%;
+  padding: .5rem 3%;
   background-color: $black;
   border-bottom: 5px solid $gold;
   @media screen and (max-width: $break-small) {
@@ -83,14 +83,14 @@ hr {
     font-size: .8rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    border: 2px solid $gold;
+    // border: 2px solid $gold;
     padding: 1rem 1.5rem;
     text-decoration: none;
     color: $gold;
     float: left;
     &:hover {
       color: $light-blue;
-      border: 2px solid $light-blue;
+      // border: 2px solid $light-blue;
     }
     @media screen and (max-width: $break-small) {
       width: 100%;
@@ -141,7 +141,7 @@ hr {
     margin-top: 0;
     background-color: $gold;
     border-top: 5px solid $black;
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
     text-transform: uppercase;
     color: $white;
     @media screen and (max-width: $break-small) {
@@ -152,7 +152,7 @@ hr {
 }
 
 #main-footer {
-  padding: 1rem 5% 0 5%;
+  padding: 1rem 5%;
   clear: top;
   width: 100%;
   position: fixed;
