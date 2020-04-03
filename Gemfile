@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
 
 ruby '2.6.3'
-gem 'coffee-rails', '~> 4.1.1'
-gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'coffee-rails'
+gem 'devise'
 gem 'friendly_id', '~> 5.1'
 gem 'jbuilder', '~> 2.0'
-gem 'jquery-rails', '>= 4.3.5'
+gem 'jquery-rails'
 gem 'mail_form', '>= 1.7.1'
 gem 'mini_racer', '~> 0.2.9'
 gem 'pg', '0.21.0'
 gem 'pygments.rb', '~> 1.2'
-gem 'rails', '5.0.7.2'
+gem 'rails', '5.2.4.2'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'sdoc', '~> 0.4.0', group: :doc
@@ -21,13 +21,13 @@ gem 'will_paginate', '~> 3.0', '>= 3.0.7'
 
 group :development, :test do
   gem 'byebug'
-  gem 'capybara', '~> 2.18', '>= 2.18.0'
-  gem 'rspec-rails', '~> 3.9', '>= 3.9.0'
+  gem 'capybara'
+  gem 'rspec-rails'
 end
 
 group :development do
   gem 'spring'
-  gem 'web-console', '~> 2.3', '>= 2.3.0'
+  gem 'web-console'
 end
 
 group :production do
