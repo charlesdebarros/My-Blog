@@ -10,10 +10,10 @@ gem 'mail_form', '>= 1.7.1'
 gem 'mini_racer', '~> 0.2.9'
 gem 'pg', '0.21.0'
 gem 'pygments.rb', '~> 1.2'
-gem 'rails', '>= 5.2.4.3'
+gem 'rails', '5.2.4.3'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', group: :doc
 #gem 'therubyracer', '~> 0.12.2', platforms: :ruby
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
