@@ -14,7 +14,7 @@ gem 'rails', '5.2.4.3'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'sdoc', group: :doc
-#gem 'therubyracer', '~> 0.12.2', platforms: :ruby
+# gem 'therubyracer', '~> 0.12.2', platforms: :ruby
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'will_paginate', '~> 3.0', '>= 3.0.7'
