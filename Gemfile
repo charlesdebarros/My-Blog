@@ -10,7 +10,7 @@ gem 'mail_form', '>= 1.7.1'
 gem 'mini_racer'
 gem 'pg', '0.21.0'
 gem 'pygments.rb', '~> 1.2'
-gem 'rails', '5.2.4.3'
+gem 'rails', '5.2.4.4'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'sdoc', group: :doc
