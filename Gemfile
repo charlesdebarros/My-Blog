@@ -11,7 +11,7 @@ gem 'mini_racer'
 gem 'pg', '0.21.0'
 gem 'pygments.rb', '~> 1.2'
 gem 'rails', '5.2.4.4'
-gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'redcarpet', '~> 3.5', '>= 3.5.1'
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'sdoc', group: :doc
 # gem 'therubyracer', '~> 0.12.2', platforms: :ruby
