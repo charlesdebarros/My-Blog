@@ -13,6 +13,8 @@
 }
 
 .homepage-content {
+  width: 80%;
+  margin: auto;
   h2 {
     font-size: 1.1em;
     text-transform: uppercase;
@@ -81,5 +83,11 @@
         margin: -15px 0 15px 0;
       }
     }
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  .homepage-content {
+    width: 100%;
   }
 }
