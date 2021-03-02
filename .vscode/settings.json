@@ -1,7 +1,0 @@
-{
-  "workbench.editorAssociations": [],
-  "AllCops": {
-    "SuggestExtensions": false
-  },
-  "ruby.rubocop.suppressRubocopWarnings": true
-}
