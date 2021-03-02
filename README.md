@@ -17,9 +17,9 @@ My website can is hosted on [Heroku](https://www.heroku.com/) and can be seen [h
 ### Technologies used
 
 * Ruby 2.7.X
-* Rails 5.2.X
-* PostgreSQL 9.6.X
-* Sass-Rails 5.2.X
+* Rails 6.1.X
+* PostgreSQL 13.2.X
+* Sass-Rails 5.1.X
 * Ruby Gems:
   - Redcarpet
   - Pygments
@@ -29,4 +29,4 @@ My website can is hosted on [Heroku](https://www.heroku.com/) and can be seen [h
   - Devise
   - Rails_12factor
 
-  ###### © 2015-2020 - Charles De Barros
+  ###### © 2015-2021 - Charles De Barros

@@ -216,6 +216,23 @@ input[type="submit"], .button {
   }
 }
 
+@media screen and (max-width: $break-small) {
+  #main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 0.9rem;
+    .copyright {
+      margin: auto;
+      display: block;
+    }
+    nav {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
 
 
 @import 'welcome';
