@@ -1,9 +1,14 @@
+# frozen_string_literal: true
+
 module ApplicationHelper
+  require 'date'
+
   class HTMLwithPygments < Redcarpet::Render::HTML
     def block_code(code, language)
       Pygments.highlight(code, lexer: language)
     end
   end
+
   def markdown(content)
     renderer = HTMLwithPygments.new(hard_wrap: true, filter_html: true)
     options = {
@@ -16,5 +21,9 @@ module ApplicationHelper
       superscript: true
     }
     Redcarpet::Markdown.new(renderer, options).render(content).html_safe
+  end
+
+  def copyright
+    @copyright = "Copyright 2015-#{Time.new.year} - Charles De Barros"
   end
 end
