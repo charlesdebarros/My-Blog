@@ -10,7 +10,7 @@ gem 'mail_form', '>= 1.7.1'
 gem 'mini_racer'
 gem 'pg'
 gem 'pygments.rb', '~> 1.2'
-gem 'rails', '6.0.3.5'
+gem 'rails', '~> 6.1', '>= 6.1.3'
 gem 'redcarpet', '~> 3.5', '>= 3.5.1'
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'sdoc', group: :doc
@@ -28,6 +28,10 @@ end
 group :development do
   gem 'spring'
   gem 'web-console'
+end
+
+group :test do
+  gem 'simplecov', '~> 0.21.2'
 end
 
 group :production do
